@@ -1,0 +1,18 @@
+Console.WriteLine("Enter the price of purchase:");
+  double price = Convert.ToDouble(Console.ReadLine());
+
+double discount = 0;
+
+if (price > 5000)
+{
+    discount = 0.20;
+}
+else if (price >= 2000 && price <= 5000) {
+    discount = 0.10;
+}
+
+double disAmount = discount * price;
+double totPrice = price -  disAmount;
+
+Console.WriteLine("Discount Applied: $" + disAmount);
+Console.WriteLine("Total Price: $" + totPrice);
