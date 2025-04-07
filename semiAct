@@ -30,7 +30,7 @@ namespace Seaborg_SemifinalActivity1
             {
                 e.Handled = true;
             }
-
+                e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
 
         private void txtYrLvl_TextChanged(object sender, EventArgs e)
